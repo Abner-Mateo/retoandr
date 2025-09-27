@@ -22,3 +22,27 @@ Requisitos técnicos:
 - Manejar errores de red y mostrar mensajes amigables.
 
 utiliza las activitys que creas necesarias y wiew
+
+
+
+
+MEJORAS IMPLEMENTADAS
+Verificación de conexión a internet:
+He añadido una función isNetworkAvailable() que comprueba si hay una conexión a internet activa antes de intentar hacer la petición a la API.
+El botón ahora verifica primero la conectividad y solo intenta acceder a la API si hay conexión.
+
+
+Si falla la conexión durante la petición a la API, ahora se mostrará una frase offline.
+Si la respuesta de la API no es exitosa, también se mostrará una frase offline como respaldo.
+Se añade un Toast informando que se está mostrando una frase offline por falta de conexión.
+
+Con internet: obtendrá frases de la API como antes
+Sin internet: mostrará frases preestablecidas, evitando errores y ofreciendo una experiencia de usuario fluida
+
+Los usuarios pueden cambiar entre modo claro y oscuro según sus preferencias.
+Las frases motivacionales aparecen con una animación suave y elegante.
+La interfaz se adapta automáticamente a los cambios de tema.
+Las preferencias de tema se mantienen entre sesiones.
+Todo sigue funcionando sin conexión a internet gracias al sistema de frases offline.
+
+
